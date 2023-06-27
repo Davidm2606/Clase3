@@ -1,0 +1,11 @@
+FILE * archivo;
+archivo = fopen("archivo.txt","...");  ---> r+=existente o w+=nuevo
+char linea[50];
+fgets(linea, 50, archivo);
+char nombre[20];
+int edad;
+fscanf(archivo,"%s %d", &nombre, &edad);
+fputs("......",archivo);
+fprintf(archivo,"%s\n",nombre):
+rewind(archivo);
+fclose(archivo);
